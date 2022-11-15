@@ -1,0 +1,16 @@
+main.root {
+    width: 100%;
+    height: auto;
+    // background-color: var(--c-yellow-400);
+
+    .container {
+        width: min(1110px, 90%);
+    }
+
+    .c-primary {
+        color: var(--c-yellow-400);
+    }
+    .c-secondary {
+        color: var(--c-purple-400);
+    }
+}

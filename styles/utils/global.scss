@@ -1,0 +1,29 @@
+:root {
+	// FONTS
+	--ff-primary: 'Poppins', sans-serif;		// 700
+	--ff-secondary: 'Open Sans', sans-serif;	// 400 600 700
+
+	--fs-100: clamp(0.5rem, 3vw, 0.875rem);
+	--fs-200: clamp(0.785rem, 3vw, 1rem); 		// 11-16
+	--fs-300: clamp(0.875rem, 3vw, 1.1875rem);	// 14-19
+	--fs-400: clamp(0.875rem, 4vw, 1.25rem); 	// 14-20
+	--fs-500: clamp(1rem, 4vw, 1.5rem); 		// 16-24
+	--fs-600: clamp(1.125rem, 6vw, 1.75rem); 	// 18-28
+	--fs-700: clamp(1.25rem, 6vw, 2.375rem);	// 20-38
+	--fs-800: clamp(1.75rem, 8vw, 3rem); 		// 28-48
+	--fs-900: clamp(4.5rem, 10vw, 6rem); 		// 72-96
+
+	// Primary
+	--c-yellow-400: hsl(38, 82%, 58%);
+	--c-purple-400: hsl(282, 77%, 42%);
+
+	// Neutral
+	--c-neutral-100: hsl(0, 0%, 100%);
+	--c-neutral-150: hsl(207, 100%, 98%);
+	--c-neutral-300: hsl(192, 13%, 51%);
+	--c-neutral-500: hsl(192, 31%, 35%);
+	--c-neutral-800: hsl(192, 100%, 9%);
+
+	// shadow
+	--c-shadow-dark: hsla(192, 100%, 9%, 0.3);
+}

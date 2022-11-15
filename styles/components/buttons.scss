@@ -1,0 +1,23 @@
+@use '../utils/mixins.scss' as *;
+
+.btn {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: -5px 10px 10px 2px var(--c-shadow-dark);
+
+    color: white;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-400);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+    &.btn-primary {
+        background-color: var(--c-yellow-400);
+    }
+    &.btn-secondary {
+        background-color: var(--c-purple-400);
+    }
+}

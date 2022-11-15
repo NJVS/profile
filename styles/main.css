@@ -1,0 +1,175 @@
+:root {
+  --ff-primary: "Poppins", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --fs-100: clamp(0.5rem, 3vw, 0.875rem);
+  --fs-200: clamp(0.785rem, 3vw, 1rem);
+  --fs-300: clamp(0.875rem, 3vw, 1.1875rem);
+  --fs-400: clamp(0.875rem, 4vw, 1.25rem);
+  --fs-500: clamp(1rem, 4vw, 1.5rem);
+  --fs-600: clamp(1.125rem, 6vw, 1.75rem);
+  --fs-700: clamp(1.25rem, 6vw, 2.375rem);
+  --fs-800: clamp(1.75rem, 8vw, 3rem);
+  --fs-900: clamp(4.5rem, 10vw, 6rem);
+  --c-yellow-400: hsl(38, 82%, 58%);
+  --c-purple-400: hsl(282, 77%, 42%);
+  --c-neutral-100: hsl(0, 0%, 100%);
+  --c-neutral-150: hsl(207, 100%, 98%);
+  --c-neutral-300: hsl(192, 13%, 51%);
+  --c-neutral-500: hsl(192, 31%, 35%);
+  --c-neutral-800: hsl(192, 100%, 9%);
+  --c-shadow-dark: hsla(192, 100%, 9%, 0.3);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  width: 100%;
+  height: auto;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  position: relative;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.btn {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: -5px 10px 10px 2px var(--c-shadow-dark);
+  color: white;
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-400);
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.btn.btn-primary {
+  background-color: var(--c-yellow-400);
+}
+.btn.btn-secondary {
+  background-color: var(--c-purple-400);
+}
+
+main.root {
+  width: 100%;
+  height: auto;
+}
+main.root .container {
+  width: min(1110px, 90%);
+}
+main.root .c-primary {
+  color: var(--c-yellow-400);
+}
+main.root .c-secondary {
+  color: var(--c-purple-400);
+}
+
+header.header {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+}
+header.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+header.header .container .header_content h1 {
+  color: var(--c-neutral-800);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-800);
+  font-weight: 700;
+  line-height: 1.25;
+}
+header.header .container .header_content h1 span:not([class]) {
+  display: block;
+}
+header.header .container .header_content p {
+  margin-bottom: 3rem;
+  color: var(--c-neutral-500);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-600);
+  font-weight: 600;
+}
+header.header .container .header_content p > span {
+  font-family: var(--ff-primary);
+  font-weight: 700;
+}
+header.header > svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: min(350px, 45vh);
+  background-color: transparent;
+  fill: var(--c-yellow-400);
+}
+
+/*# sourceMappingURL=main.css.map */
