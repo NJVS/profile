@@ -2,6 +2,7 @@
 	// FONTS
 	--ff-primary: 'Poppins', sans-serif;		// 700
 	--ff-secondary: 'Open Sans', sans-serif;	// 400 600 700
+	--ff-triary: 'Source Code Pro', sans-serif; // 300 400
 
 	--fs-100: clamp(0.5rem, 3vw, 0.875rem);
 	--fs-200: clamp(0.785rem, 3vw, 1rem); 		// 11-16
@@ -22,7 +23,8 @@
 	--c-neutral-150: hsl(207, 100%, 98%);
 	--c-neutral-300: hsl(192, 13%, 51%);
 	--c-neutral-500: hsl(192, 31%, 35%);
-	--c-neutral-800: hsl(192, 100%, 9%);
+	--c-neutral-700: hsl(0, 0%, 14%);
+	--c-neutral-800: hsl(0, 0%, 12%);
 
 	// shadow
 	--c-shadow-dark: hsla(192, 100%, 9%, 0.3);
