@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Rock Paper Scissors Lizard Spock",
+        "git_url": "https://github.com/NJVS/Rock-Paper-Scissors-Lizard-Spock.git",
+        "live_url": "https://njvs.github.io/Rock-Paper-Scissors-Lizard-Spock/",
+        "img_desktop_src": "./assets/image/projects/rps_desktop.png",
+        "img_mobile_src": "./assets/image/projects/rps_mobile.png"
+    },
+    {
+        "name": "Advice Generator",
+        "git_url": "https://github.com/NJVS/Advice-generator-app.git",
+        "live_url": "https://njvs.github.io/Advice-generator-app/",
+        "img_desktop_src": "./assets/image/projects/advice_desktop.png",
+        "img_mobile_src": "./assets/image/projects/advice_mobile.png"
+    },
+    {
+        "name": "Snap Landing Page",
+        "git_url": "https://github.com/NJVS/snap-intro-section.git",
+        "live_url": "https://njvs.github.io/snap-intro-section/",
+        "img_desktop_src": "./assets/image/projects/snap_desktop.png",
+        "img_mobile_src": "./assets/image/projects/snap_mobile.png"
+    },
+    {
+        "name": "Interactive Credit Card",
+        "git_url": "https://github.com/NJVS/Interactive-card-details-form.git",
+        "live_url": "https://njvs.github.io/Interactive-card-details-form/",
+        "img_desktop_src": "./assets/image/projects/card_desktop.png",
+        "img_mobile_src": "./assets/image/projects/card_mobile.png"
+    },
+    {
+        "name": "Blogr Landing Page",
+        "git_url": "https://github.com/NJVS/blogr-landing-page.git",
+        "live_url": "https://njvs.github.io/blogr-landing-page/",
+        "img_desktop_src": "./assets/image/projects/blogr_desktop.png",
+        "img_mobile_src": "./assets/image/projects/blogr_mobile.png"
+    },
+    {
+        "name": "Huddle Landing Page",
+        "git_url": "https://github.com/NJVS/Huddle-landing-page.git",
+        "live_url": "https://njvs.github.io/Huddle-landing-page/",
+        "img_desktop_src": "./assets/image/projects/huddle_desktop.png",
+        "img_mobile_src": "./assets/image/projects/huddle_mobile.png"
+    },
+    {
+        "name": "Clipboard Landing Page",
+        "git_url": "https://github.com/NJVS/Clipboard-landing-page.git",
+        "live_url": "https://njvs.github.io/Clipboard-landing-page/",
+        "img_desktop_src": "./assets/image/projects/clipboard_desktop.png",
+        "img_mobile_src": "./assets/image/projects/clipboard_mobile.png"
+    },
+    {
+        "name": "Insure Landing Page",
+        "git_url": "https://github.com/NJVS/Insure-landing-page.git",
+        "live_url": "https://njvs.github.io/Insure-landing-page/",
+        "img_desktop_src": "./assets/image/projects/insure_desktop.png",
+        "img_mobile_src": "./assets/image/projects/insure_mobile.png"
+    }
+]

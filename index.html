@@ -10,9 +10,7 @@
 	<!-- google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap"
-		rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Source+Code+Pro&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="./styles/main.css">
 </head>
@@ -32,20 +30,119 @@
 			<svg id="headWave" preserveAspectRatio="none" viewBox="0 0 1440 250"></svg>
 		</header>
 
-		<div class="main" id="main">
+		<div class="main-container" id="main">
 			<section class="about">
 				<div class="container">
 					<article class="section_article">
-						<h2 class="section_title">Aspiring Developer</h2>
-						<p>I've always wanted to work in the web development industry since I find its technology fascinating, 
-							and becoming a Full-Stack Developer is my ultimate objective. Though I'm proud of my front-end skills, 
-							I'm well aware that I still have a lot to learn.</p>
+						<div class="intro">
+							<h2 class="section_title">Aspiring Developer</h2>
+							<p>I've always wanted to work in the web development industry since I find its technology fascinating, 
+								and becoming a Full-Stack Developer is my ultimate objective. Tho I'm proud of my front-end skills, 
+								I'm well aware that I still have a lot to learn.</p>
+						</div>
+						<div class="personal-details">
+							<p><img src="./assets/icons/icon-location-dot-solid.svg" alt="my location">Bacoor, Cavite, Philippines</p>
+							<p><img src="./assets/icons/icon-envelope-solid.svg" alt="email">neiljonathanv.sagisi@gmail.com</p>
+						</div>
+						<div class="links">
+							<a href="https://github.com/NJVS" class="btn btn-secondary" target="_blank">
+								<img src="./assets/icons/icon-github.svg" alt="github">Github</a>
+							<a href="" class="btn btn-secondary" target="_blank">
+								<img src="./assets/icons/icon-download-solid.svg">Resume</a>
+						</div>
 					</article>
-					<figure>
+					<div class="section_illustration">
 						<img src="./assets/image/about photo.png" alt="about me illustration">
-					</figure>
-					
+						<div class="stacks">
+							<span>Html5</span>
+							<span>CSS3</span>
+							<span>SASS</span>
+							<span>javascipt</span>
+							<span>react.js</span>
+							<span>node.js</span>
+							<span>webpack</span>
+							<span>npm</span>
+							<span>git</span>
+							<span>materialUI</span>
+							<span>firebase</span>
+							<span>bootstrap</span>
+							<span>tailwind</span>
+							<span>figma</span>
+							<span>AdobeXD</span>
+						</div>
+					</div>
 				</div>
+			</section>
+
+			<section class="projects container">
+				<h2 class="section_title">Projects</h2>
+				<div id="projectCarousel" class="carousel">
+					<!-- <div class="carousel_item active">
+						<picture>
+							<source media="(max-width: 426px)" srcset="./assets/image/projects/rps_mobile.png">
+							<img src="./assets/image/projects/rps_desktop.png" alt="project screenshot">
+						</picture>
+						<div class="item_details">
+							<div>
+								<h3 class="title">Rock Paper Scissors Lizard Spock</h3>
+								<hr />
+								<ul class="links">
+									<li><a href=""><img src="./assets/icons/icon-github.svg" alt="github link icon"></a></li>
+									<li><a href=""><img src="./assets/icons/icon-demo.svg" alt="demo link icon"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="carousel_item next">
+						<picture>
+							<source media="(max-width: 426px)" srcset="./assets/image/projects/advice_mobile.png">
+							<img src="./assets/image/projects/advice_desktop.png" alt="project screenshot">
+						</picture>
+						<div class="item_details">
+							<div>
+								<h3 class="title">Advice Generator</h3>
+								<hr />
+								<ul class="links">
+									<li><a href=""><img src="./assets/icons/icon-github.svg" alt="github link icon"></a></li>
+									<li><a href=""><img src="./assets/icons/icon-demo.svg" alt="demo link icon"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="carousel_item">
+						<picture>
+							<source media="(max-width: 426px)" srcset="./assets/image/projects/blogr_mobile.png">
+							<img src="./assets/image/projects/blogr_desktop.png" alt="project screenshot">
+						</picture>
+						<div class="item_details">
+							<div>
+								<h3 class="title">Blogr Landing Page</h3>
+								<hr />
+								<ul class="links">
+									<li><a href=""><img src="./assets/icons/icon-github.svg" alt="github link icon"></a></li>
+									<li><a href=""><img src="./assets/icons/icon-demo.svg" alt="demo link icon"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="carousel_item prev">
+						<picture>
+							<source media="(max-width: 426px)" srcset="./assets/image/projects/insure_mobile.png">
+							<img src="./assets/image/projects/insure_desktop.png" alt="project screenshot">
+						</picture>
+						<div class="item_details">
+							<div>
+								<h3 class="title">Insure Landing Page</h3>
+								<hr />
+								<ul class="links">
+									<li><a href=""><img src="./assets/icons/icon-github.svg" alt="github link icon"></a></li>
+									<li><a href=""><img src="./assets/icons/icon-demo.svg" alt="demo link icon"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div> -->
+				</div>
+				
 			</section>
 		</div>
 
@@ -53,7 +150,7 @@
 
 	</main>
 
-	<script src="./js/main.js"></script>
+	<script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
