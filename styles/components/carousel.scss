@@ -6,10 +6,19 @@
     align-items: center;
     justify-content: center;
     transform-style: preserve-3d;
+    cursor: pointer;
 
     .carousel_item {
         position: relative;
+        border: 1px solid var(--c-neutral-400);
         border-radius: 10px;
+        box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
         overflow: hidden;
         transition: all 0.5s ease;
 
@@ -23,7 +32,7 @@
             left: 0;
             margin-bottom: -4rem;
             aspect-ratio: 1/1;
-            background-color: rgba(#000, 0.5);
+            background-color: var(--c-neutral-850);
             border-radius: 0 100vh 0 0;
 
             // hide
@@ -43,7 +52,7 @@
                 // transition: all 0s ease;
 
                 h3.title {
-                    color: var(--c-neutral-150);
+                    color: var(--c-neutral-100);
                     font-family: var(--ff-primary);
                     font-size: var(--fs-500);
                     line-height: 1.25;
@@ -52,7 +61,11 @@
                 hr {
                     margin: 0.25rem 0 1rem 0;
                     width: 60%;
-                    border-color: var(--c-yellow-400);
+                    height: 1px;
+                    background-color: var(--c-yellow-400);
+                    border: none;
+                    border-radius: 50vh;
+                    // border-color: var(--c-yellow-400);
                 }
     
                 .links {
@@ -89,6 +102,7 @@
         &.next {
             transform: translate3d(25%, 0, -100px);
         }
+
         &.prev {
             transform: translate3d(-25%, 0, -100px);
         }

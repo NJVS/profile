@@ -14,12 +14,10 @@
   --c-yellow-400: hsl(38, 82%, 58%);
   --c-purple-400: hsl(282, 77%, 42%);
   --c-neutral-100: hsl(0, 0%, 100%);
-  --c-neutral-150: hsl(207, 100%, 98%);
-  --c-neutral-300: hsl(192, 13%, 51%);
-  --c-neutral-500: hsl(192, 31%, 35%);
+  --c-neutral-400: hsl(0, 0%, 50%);
   --c-neutral-700: hsl(0, 0%, 14%);
   --c-neutral-800: hsl(0, 0%, 12%);
-  --c-shadow-dark: hsla(192, 100%, 9%, 0.3);
+  --c-neutral-850: hsla(0, 0%, 12%, 0.5);
 }
 
 /* Box sizing rules */
@@ -106,7 +104,7 @@ select {
   width: max-content;
   border: none;
   border-radius: 0.5rem;
-  box-shadow: -5px 10px 10px 2px var(--c-shadow-dark);
+  box-shadow: -5px 5px 5px 0 var(--c-neutral-850);
   color: white;
   font-family: var(--ff-secondary);
   font-size: var(--fs-300);
@@ -132,10 +130,13 @@ select {
   align-items: center;
   justify-content: center;
   transform-style: preserve-3d;
+  cursor: pointer;
 }
 .carousel .carousel_item {
   position: relative;
+  border: 1px solid var(--c-neutral-400);
   border-radius: 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   transition: all 0.5s ease;
 }
@@ -148,7 +149,7 @@ select {
   left: 0;
   margin-bottom: -4rem;
   aspect-ratio: 1/1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--c-neutral-850);
   border-radius: 0 100vh 0 0;
   width: 0px;
   padding: 0;
@@ -164,7 +165,7 @@ select {
   visibility: hidden;
 }
 .carousel .carousel_item .item_details > div h3.title {
-  color: var(--c-neutral-150);
+  color: var(--c-neutral-100);
   font-family: var(--ff-primary);
   font-size: var(--fs-500);
   line-height: 1.25;
@@ -172,7 +173,10 @@ select {
 .carousel .carousel_item .item_details > div hr {
   margin: 0.25rem 0 1rem 0;
   width: 60%;
-  border-color: var(--c-yellow-400);
+  height: 1px;
+  background-color: var(--c-yellow-400);
+  border: none;
+  border-radius: 50vh;
 }
 .carousel .carousel_item .item_details > div .links {
   display: flex;
