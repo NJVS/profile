@@ -335,7 +335,14 @@ header.header > svg {
   text-transform: uppercase;
 }
 .main-container section.projects {
-  padding: 5rem 0;
+  padding: 10rem 0;
+}
+.main-container section.projects .section_title {
+  margin-bottom: 5rem;
+  color: var(--c-neutral-800);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-600);
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
