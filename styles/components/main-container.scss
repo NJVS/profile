@@ -1,59 +1,99 @@
 @use '../utils/mixins.scss' as *;
 
 .main-container {
+    position: relative;
     width: 100%;
+    padding: 5rem 0;
+    background-color: var(--c-neutral-100);
 
-    // about me section
-    section.about {
-        padding: 5rem 0;
-        background-color: var(--c-yellow-400);
-        .container {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            align-items: center;
+    > svg {
+        position: absolute;
+        width: 100%;
+        // height: min(350px, 45vh);
+        background-color: transparent;
+        fill: var(--c-neutral-100);
+
+        &.top-wavy {
+            bottom: 100%;
         }
+        &.bottom-wavy {
+            top: 100%;
+        }
+    }
 
-        .section_article {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
+    section.intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
-            .intro {
-                h2 {
-                    margin-bottom: 1rem;
-                    color: var(--c-neutral-800);
-                    font-family: var(--ff-primary);
-                    font-size: var(--fs-700);
-                    font-weight: 700;
-                }
-                p {
-                    color: var(--c-neutral-700);
-                    font-family: var(--ff-secondary);
-                    font-size: var(--fs-300);
-                    font-size: 18px;
-                    font-weight: 600;
-                }
+        article {
+            align-self: center;
+            width: min(480px, 100%);
+            
+            > h2 {
+                // margin-bottom: 0.5rem;
+                color: var(--c-neutral-800);
+                font-family: var(--ff-primary);
+                font-size: var(--fs-600);
+                font-weight: 700;
             }
 
-            .personal-details {
-                font-family: var(--ff-secondary);
-                font-size: var(--fs-200);
-                font-weight: 600;
-                color: var(--c-neutral-700);
+            .tab {
+                width: 100%;
+                margin-bottom: 1.5rem;
 
-                p {
+                nav.tab_nav {
                     display: flex;
-                    gap: 1rem;
+                    align-items: center;
+                    gap: 1.25rem;
+                    margin-bottom: 0.75rem;
+
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        color: var(--c-neutral-300);
+                        font-family: var(--ff-secondary);
+                        font-size: var(--fs-200);
+                        cursor: pointer;
+                        &:not(.active) {
+                            @include hover {
+                                color: var(--c-yellow-400);
+                            }
+                        }
+                        &.active {
+                            color: var(--c-yellow-400);
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .tab_content {
+                    p {
+                        color: var(--c-neutral-500);
+                        font-family: var(--ff-secondary);
+                        font-size: var(--fs-200);
+                        font-weight: 400;
+                        line-height: 1.5;
+
+                        display: none;
+                        opacity: 0;
+                        visibility: hidden;
+
+                        &.show {
+                            display: block;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
                 }
             }
+
             .links {
                 display: flex;
                 align-items: center;
-                gap: 1.5rem;
+                gap: 1rem;
             }
         }
 
-        .section_illustration {
+        .about-illustration {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -61,21 +101,45 @@
             .stacks {
                 display: flex;
                 justify-content: center;
-                gap: 8px;
                 flex-wrap: wrap;
+                gap: 6px;
+                width: min(450px, 100%);
                 text-align: center;
                 span {
-                    padding: 0 10px;
-                    border: 1px solid var(--c-neutral-700);
-                    border-radius: 4px;
-                    color: var(--c-neutral-700);
+                    padding: 0 8px;
+                    border: 1px solid var(--c-neutral-400);
+                    border-radius: 5px;
+                    color: var(--c-neutral-400);
                     font-family: var(--ff-triary);
                     font-size: var(--fs-100);
-                    text-transform: uppercase;
                 }
             }
         }
     }
+
+    //     .section_illustration {
+    //         display: flex;
+    //         flex-direction: column;
+    //         align-items: center;
+
+    //         .stacks {
+    //             display: flex;
+    //             justify-content: center;
+    //             gap: 8px;
+    //             flex-wrap: wrap;
+    //             text-align: center;
+    //             span {
+    //                 padding: 0 10px;
+    //                 border: 1px solid var(--c-neutral-700);
+    //                 border-radius: 4px;
+    //                 color: var(--c-neutral-700);
+    //                 font-family: var(--ff-triary);
+    //                 font-size: var(--fs-100);
+    //                 text-transform: uppercase;
+    //             }
+    //         }
+    //     }
+    // }
 
     // project section
     section.projects {
