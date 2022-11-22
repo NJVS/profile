@@ -8,26 +8,31 @@
     padding: 0.75rem 1.75rem;
     width: max-content;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 5px;
     box-shadow: -5px 5px 5px 0 var(--c-neutral-850);
 
     color: white;
     font-family: var(--ff-secondary);
-    font-size: var(--fs-300);
-    font-weight: 700;
+    font-size: var(--fs-200);
+    font-weight: 600;
     text-decoration: none;
     text-transform: capitalize;
     letter-spacing: 1px;
 
     &.btn-primary {
         background-color: var(--c-yellow-400);
+        &.btn-outline {
+            border: 1px solid var(--c-yellow-400);
+            background: transparent;
+            color: var(--c-yellow-400);
+        }
     }
     &.btn-secondary {
         background-color: var(--c-purple-400);
-    }
-    &.btn-lg {
-        padding: 1rem 1.5rem;
-        font-size: var(--fs-400);
-
+        &.btn-outline {
+            border: 1px solid var(--c-purple-400);
+            background: transparent;
+            color: var(--c-purple-400);
+        }
     }
 }
