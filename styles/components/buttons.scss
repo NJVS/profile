@@ -9,7 +9,6 @@
     width: max-content;
     border: none;
     border-radius: 5px;
-    box-shadow: -5px 5px 5px 0 var(--c-neutral-850);
 
     color: white;
     font-family: var(--ff-secondary);
@@ -17,7 +16,7 @@
     font-weight: 600;
     text-decoration: none;
     text-transform: capitalize;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
 
     &.btn-primary {
         background-color: var(--c-yellow-400);
