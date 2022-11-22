@@ -20,56 +20,61 @@
 
 		<header class="header">
 			<div class="container">
-				<img src="./assets/image/hero photo.png" class="header_img" alt="welcome illustration">
+				<img src="./assets/image/hero-img.png" class="header_img" alt="welcome illustration">
 				<div class="header_content">
 					<h1><span>Hi there,</span> I'm <span class="c-primary">Neil</span> Jonathan</h1>
 					<p>I'm into <span id="like" class="c-secondary">Web Development</span></p>
-					<a href="#main" class="btn btn-secondary btn-lg">More about me</a>
+					<a href="#main" class="btn btn-secondary">More about me</a>
 				</div>
 			</div>
-			<svg id="headWave" preserveAspectRatio="none" viewBox="0 0 1440 250"></svg>
+
 		</header>
 
 		<div class="main-container" id="main">
-			<section class="about">
-				<div class="container">
-					<article class="section_article">
-						<div class="intro">
-							<h2 class="section_title">Aspiring Developer</h2>
-							<p>I've always wanted to work in the web development industry since I find its technology fascinating, 
-								and becoming a Full-Stack Developer is my ultimate objective. Tho I'm proud of my front-end skills, 
-								I'm well aware that I still have a lot to learn.</p>
+			<svg id="headWave" class="top-wavy" preserveAspectRatio="none" viewBox="0 0 1440 350"></svg>
+			<section class="intro container">
+				<article class="about-me">
+					<h2>Aspiring Web Developer!</h2>
+					<div class="tab">
+						<nav class="tab_nav">
+							<button id="aboutLife" class="active">Life</button>
+							<button id="aboutEduc">Education</button>
+							<button id="aboutExpi">Experience</button>
+						</nav>
+						<div class="tab_content">
+							<p class="show" data-for="aboutLife">I've always wanted to work in the web development industry since I find its technology
+								fascinating, and becoming a Full-Stack Developer is my ultimate objective. Tho I'm proud 
+								of my front-end skills,	I'm well aware that I still have a lot to learn.</p>
+							<p data-for="aboutEduc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, neque quia voluptatibus
+								odio modi dolorem consectetur ut excepturi itaque mollitia. In rerum facilis possimus, ratione ad inventore maxime? 
+								Ratione, fugiat!</p>
+							<p data-for="aboutExpi">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ab quam natus nihil 
+								distinctio numquam dignissimos harum quia eligendi omnis.</p>
 						</div>
-						<div class="personal-details">
-							<p><img src="./assets/icons/icon-location-dot-solid.svg" alt="my location">Bacoor, Cavite, Philippines</p>
-							<p><img src="./assets/icons/icon-envelope-solid.svg" alt="email">neiljonathanv.sagisi@gmail.com</p>
-						</div>
-						<div class="links">
-							<a href="https://github.com/NJVS" class="btn btn-secondary" target="_blank">
-								<img src="./assets/icons/icon-github.svg" alt="github">Github</a>
-							<a href="" class="btn btn-secondary" target="_blank">
-								<img src="./assets/icons/icon-download-solid.svg">Resume</a>
-						</div>
-					</article>
-					<div class="section_illustration">
-						<img src="./assets/image/about photo.png" alt="about me illustration">
-						<div class="stacks">
-							<span>Html5</span>
-							<span>CSS3</span>
-							<span>SASS</span>
-							<span>javascipt</span>
-							<span>react.js</span>
-							<span>node.js</span>
-							<span>webpack</span>
-							<span>npm</span>
-							<span>git</span>
-							<span>materialUI</span>
-							<span>firebase</span>
-							<span>bootstrap</span>
-							<span>tailwind</span>
-							<span>figma</span>
-							<span>AdobeXD</span>
-						</div>
+					</div>
+					<div class="links">
+						<a href="https://github.com/NJVS" class="btn btn-secondary" target="_blank">View Github</a>
+						<a href="" class="btn btn-secondary btn-outline" target="_blank">Download CV</a>
+					</div>
+				</article>
+				<div class="about-illustration">
+					<img src="./assets/image/about-img.png" alt="about me illustration">
+					<div class="stacks">
+						<span>Html5</span>
+						<span>CSS3</span>
+						<span>SASS</span>
+						<span>javascipt</span>
+						<span>react.js</span>
+						<span>node.js</span>
+						<span>webpack</span>
+						<span>npm</span>
+						<span>git</span>
+						<span>materialUI</span>
+						<span>firebase</span>
+						<span>bootstrap</span>
+						<span>tailwind</span>
+						<span>figma</span>
+						<span>AdobeXD</span>
 					</div>
 				</div>
 			</section>
@@ -77,14 +82,15 @@
 			<section class="projects container">
 				<h2 class="section_title">Featured Projects</h2>
 				<div id="projectCarousel" class="carousel"></div>
-				
+
 			</section>
 		</div>
 
 		<footer class="footer container">
 			<div>
 				<h3>Any thoughts?</h3>
-				<p>Thanks for visiting my profile. I'm also open for project collaboration, just send me your design and I'll do it for you. Here are my additional contact details:</p>
+				<p>Thanks for visiting my profile. I'm also open for project collaboration, just send me your design and
+					I'll do it for you. Here are my additional contact details:</p>
 				<ul class="details">
 					<li>
 						<img src="./assets/icons/icon-location-dot-solid.svg" alt="location">
@@ -109,7 +115,8 @@
 					<input type="text" name="lastname" id="inp_lastname" placeholder="Lastname">
 				</div>
 				<input type="email" name="email" id="inp_email" placeholder="example@gmail.com">
-				<textarea name="message" id="inp_message" cols="30" rows="10" placeholder="tell me your thoughts..."></textarea>
+				<textarea name="message" id="inp_message" cols="30" rows="10"
+					placeholder="tell me your thoughts..."></textarea>
 				<input type="submit" class="btn btn-primary" value="Submit">
 			</form>
 			<img src="./assets/image/footer-img.png" alt="hit me up illustration">
