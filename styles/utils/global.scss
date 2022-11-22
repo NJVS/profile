@@ -4,18 +4,18 @@
 	--ff-secondary: 'Open Sans', sans-serif;	// 400 600 700
 	--ff-triary: 'Source Code Pro', sans-serif; // 300 400
 
-	--fs-100: clamp(0.5rem, 3vw, 0.875rem);
-	--fs-200: clamp(0.785rem, 3vw, 1rem); 		// 11-16
-	--fs-300: clamp(0.875rem, 3vw, 1.1875rem);	// 14-19
-	--fs-400: clamp(0.875rem, 4vw, 1.25rem); 	// 14-20
-	--fs-500: clamp(1rem, 4vw, 1.5rem); 		// 16-24
+	--fs-100: 0.875rem;
+	--fs-200: clamp(0.875rem, 3vw, 1rem); 		// 14-16
+	--fs-300: clamp(0.875rem, 3vw, 1.125rem);	// 14-18
+	--fs-400: clamp(1rem, 4vw, 1.25rem); 		// 16-20
+	--fs-500: clamp(1.125rem, 4vw, 1.5rem); 	// 18-24
 	--fs-600: clamp(1.125rem, 6vw, 1.75rem); 	// 18-28
-	--fs-700: clamp(1.25rem, 6vw, 2.375rem);	// 20-38
+	--fs-700: clamp(1.25rem, 6vw, 2.25rem);		// 20-36
 	--fs-800: clamp(1.75rem, 8vw, 3rem); 		// 28-48
 	--fs-900: clamp(4.5rem, 10vw, 6rem); 		// 72-96
 
 	// Primary
-	--c-yellow-400: hsl(38, 82%, 58%);
+	--c-yellow-400: #ecab3c;
 	--c-purple-400: hsl(282, 77%, 42%);
 
 	// Neutral
