@@ -1,6 +1,7 @@
 main.root {
     width: 100%;
     height: auto;
+    background-color: var(--c-neutral-200);
 
     .container {
         width: min(1110px, 90%);
