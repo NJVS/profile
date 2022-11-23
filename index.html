@@ -10,7 +10,7 @@
 	<!-- google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="./styles/main.css">
 </head>
@@ -93,18 +93,17 @@
 		</div>
 
 		<footer class="footer container">
-			<div>
-				<h3>Any thoughts?</h3>
-				<p>Thanks for visiting my profile. I'm also open for project collaboration, just send me your design and
-					I'll do it for you. Here are my additional contact details:</p>
+			<div class="more-info">
+				<h3 class="logo logo-dark">Lien</h3>
+				<p>Thanks for visiting my profile. You can also find me here:</p>
 				<ul class="details">
 					<li>
 						<img src="./assets/icons/icon-location-dot-solid.svg" alt="location">
-						<p>Cavite, Philippines</p>
+						<span>Cavite, Philippines</span>
 					</li>
 					<li>
 						<img src="./assets/icons/icon-envelope-solid.svg" alt="email">
-						<p>neiljonathanv.sagisi@gmail.com</p>
+						<span>neiljonathanv.sagisi@gmail.com</span>
 					</li>
 				</ul>
 				<ul class="socials">
@@ -115,16 +114,21 @@
 					<li><a href=""><img src="./assets/icons/icon-codepen.svg" alt="codepen"></a></li>
 				</ul>
 			</div>
-			<form action="">
-				<div class="form-group">
-					<input type="text" name="firstname" id="inp_firstname" placeholder="Firstname">
-					<input type="text" name="lastname" id="inp_lastname" placeholder="Lastname">
-				</div>
-				<input type="email" name="email" id="inp_email" placeholder="example@gmail.com">
-				<textarea name="message" id="inp_message" cols="30" rows="10"
-					placeholder="tell me your thoughts..."></textarea>
-				<input type="submit" class="btn btn-primary" value="Submit">
-			</form>
+			<div class="contact-me">
+				<h3>Any thoughts?</h3>
+				<p>Have any project in mind? Use this to hit me up</p>
+				<form action="">
+					<!-- <div class="form-group">
+						<input type="text" name="firstname" id="inp_firstname" placeholder="Firstname">
+						<input type="text" name="lastname" id="inp_lastname" placeholder="Lastname">
+					</div> -->
+					<input type="email" name="email" id="inp_email" placeholder="example@gmail.com">
+					<textarea name="message" id="inp_message" cols="30" rows="10"
+						placeholder="tell me your thoughts..."></textarea>
+					<input type="submit" class="btn btn-primary" value="Submit">
+				</form>
+			</div>
+			
 			<img src="./assets/image/footer-img.png" alt="hit me up illustration">
 		</footer>
 
