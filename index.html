@@ -23,7 +23,7 @@
 				<img src="./assets/image/hero-img.png" class="header_img" alt="welcome illustration">
 				<div class="header_content">
 					<h1><span>Hi there,</span> I'm <span class="c-primary">Neil</span> Jonathan</h1>
-					<p>I'm into <span id="like" class="c-secondary">Web Development</span></p>
+					<p>I'm into <span id="like" class="c-secondary" data-text='["Frontend Development", "UI/UX", "Backend Development", "Fullstack Development"]' data-duration="2000"></span></p>
 					<a href="#main" class="btn btn-secondary">More about me</a>
 				</div>
 			</div>
@@ -31,7 +31,6 @@
 		</header>
 
 		<div class="main-container" id="main">
-			<svg id="headWave" class="top-wavy" preserveAspectRatio="none" viewBox="0 0 1440 350"></svg>
 			<section class="intro container">
 				<article class="about-me">
 					<h2>Aspiring Web Developer!</h2>
@@ -87,6 +86,10 @@
 				<div id="projectCarousel" class="carousel"></div>
 
 			</section>
+
+			<!-- waves -->
+			<svg preserveAspectRatio="none" viewBox="0 0 1440 350" data-wavy="top"></svg>
+			<svg preserveAspectRatio="none" viewBox="0 0 1440 100" data-wavy="bottom"></svg>
 		</div>
 
 		<footer class="footer container">
