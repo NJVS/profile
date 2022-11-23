@@ -2,6 +2,7 @@
   --ff-primary: "Poppins", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --ff-triary: "Source Code Pro", sans-serif;
+  --ff-logo: "Lobster", cursive;
   --fs-100: 0.875rem;
   --fs-200: clamp(0.875rem, 3vw, 1rem);
   --fs-300: clamp(0.875rem, 3vw, 1.125rem);
@@ -226,7 +227,7 @@ main.root {
   background-color: var(--c-neutral-200);
 }
 main.root .container {
-  width: min(1110px, 90%);
+  width: min(1000px, 90%);
   margin: 0 auto;
 }
 main.root .c-primary {
@@ -234,6 +235,13 @@ main.root .c-primary {
 }
 main.root .c-secondary {
   color: var(--c-purple-400);
+}
+main.root .logo {
+  font-family: var(--ff-logo);
+  font-size: var(--fs-800);
+}
+main.root .logo.logo-dark {
+  color: var(--c-neutral-600);
 }
 
 header.header {
@@ -401,64 +409,70 @@ footer.footer {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 7rem 0 2rem;
 }
-footer.footer > div {
-  width: min(400px, 100%);
-}
-footer.footer > div h3 {
-  color: var(--c-neutral-800);
+footer.footer h3 {
+  color: var(--c-neutral-600);
   font-family: var(--ff-primary);
   font-size: var(--fs-500);
 }
-footer.footer > div p {
+footer.footer p {
+  margin-bottom: 1rem;
   color: var(--c-neutral-400);
   font-family: var(--ff-secondary);
   font-size: var(--fs-100);
   font-weight: 600;
 }
-footer.footer > div ul.details {
-  margin-top: 1rem;
+footer.footer .more-info {
+  width: min(300px, 100%);
+  color: var(--c-neutral-400);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-100);
+  font-weight: 400;
 }
-footer.footer > div ul.details li {
+footer.footer .more-info ul.details li {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-footer.footer > div ul.details li:first-child > img {
+footer.footer .more-info ul.details li:first-child > img {
   margin: 0 1px;
 }
-footer.footer > div ul.socials {
+footer.footer .more-info ul.socials {
   margin-top: 1rem;
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
-footer.footer form {
+footer.footer .contact-me {
   justify-self: end;
   width: min(350px, 100%);
+}
+footer.footer .contact-me form {
+  justify-self: end;
   font-family: var(--ff-secondary);
 }
-footer.footer form input, footer.footer form textarea {
+footer.footer .contact-me form input, footer.footer .contact-me form textarea {
   display: block;
   width: 100%;
   margin-bottom: 10px;
   padding: 0.375rem 0.75rem;
   border-radius: 5px;
 }
-footer.footer form input:not([type=submit]), footer.footer form textarea:not([type=submit]) {
+footer.footer .contact-me form input:not([type=submit]), footer.footer .contact-me form textarea:not([type=submit]) {
   border: 1px solid var(--c-neutral-400);
 }
-footer.footer form input[name=message], footer.footer form textarea[name=message] {
+footer.footer .contact-me form input[name=message], footer.footer .contact-me form textarea[name=message] {
   height: 200px;
 }
-footer.footer form input::placeholder, footer.footer form textarea::placeholder {
+footer.footer .contact-me form input::placeholder, footer.footer .contact-me form textarea::placeholder {
   color: var(--c-neutral-300);
 }
-footer.footer form input[type=submit], footer.footer form textarea[type=submit] {
+footer.footer .contact-me form input[type=submit], footer.footer .contact-me form textarea[type=submit] {
   width: 50%;
   margin-left: auto;
 }
-footer.footer form .form-group {
+footer.footer .contact-me form .form-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;

@@ -4,23 +4,29 @@ footer.footer {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 7rem 0 2rem;
 
-    > div {
-        width: min(400px, 100%);
-        h3 {
-            color: var(--c-neutral-800);
-            font-family: var(--ff-primary);
-            font-size: var(--fs-500);
-        }
-        p {
-            color: var(--c-neutral-400);
-            font-family: var(--ff-secondary);
-            font-size: var(--fs-100);
-            font-weight: 600;
-        }
+    h3 {
+        color: var(--c-neutral-600);
+        font-family: var(--ff-primary);
+        font-size: var(--fs-500);
+    }
+    p {
+        margin-bottom: 1rem;
+        color: var(--c-neutral-400);
+        font-family: var(--ff-secondary);
+        font-size: var(--fs-100);
+        font-weight: 600;
+    }
+
+    .more-info {
+        width: min(300px, 100%);
+        color: var(--c-neutral-400);
+        font-family: var(--ff-secondary);
+        font-size: var(--fs-100);
+        font-weight: 400;
 
         ul.details {
-            margin-top: 1rem;
             li {
                 display: flex;
                 align-items: center;
@@ -40,39 +46,45 @@ footer.footer {
         }
     }
 
-    form {
+    .contact-me {
         justify-self: end;
         width: min(350px, 100%);
-        font-family: var(--ff-secondary);
 
-        input, textarea {
-            display: block;
-            width: 100%;
-            margin-bottom: 10px;
-            padding: 0.375rem 0.75rem;
-            border-radius: 5px;
-            &:not([type=submit]) {
-                border: 1px solid var(--c-neutral-400);
+        form {
+            justify-self: end;
+            font-family: var(--ff-secondary);
+    
+            input, textarea {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 0.375rem 0.75rem;
+                border-radius: 5px;
+                &:not([type=submit]) {
+                    border: 1px solid var(--c-neutral-400);
+                }
+                &[name=message] {
+                    height: 200px;
+                }
+                &::placeholder {
+                    color: var(--c-neutral-300);
+                }
+    
+                &[type=submit] {
+                    width: 50%;
+                    margin-left: auto;
+                }
             }
-            &[name=message] {
-                height: 200px;
+    
+            .form-group {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
             }
-            &::placeholder {
-                color: var(--c-neutral-300);
-            }
-
-            &[type=submit] {
-                width: 50%;
-                margin-left: auto;
-            }
-        }
-
-        .form-group {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
         }
     }
+
+    
 
     > img {
         position: absolute;
