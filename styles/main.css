@@ -20,7 +20,7 @@
   --c-neutral-600: hsl(0, 0%, 28%);
   --c-neutral-700: hsl(0, 0%, 14%);
   --c-neutral-800: hsl(0, 0%, 12%);
-  --c-neutral-850: hsla(0, 0%, 12%, 0.5);
+  --c-neutral-890: hsla(0, 0%, 12%, 0.9);
 }
 
 /* Box sizing rules */
@@ -129,6 +129,11 @@ select {
   background: transparent;
   color: var(--c-purple-400);
 }
+.btn.btn-sm {
+  padding: 0.375rem 0.75rem;
+  font-size: var(--fs-100);
+  font-weight: 400;
+}
 
 .carousel {
   position: relative;
@@ -142,7 +147,8 @@ select {
   position: relative;
   border: 1px solid var(--c-neutral-400);
   border-radius: 10px;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 45px 0px -45px;
+  box-shadow: 0 3.125rem 2rem -3rem var(--c-neutral-800);
   overflow: hidden;
   transition: all 0.5s ease;
 }
@@ -155,7 +161,7 @@ select {
   left: 0;
   margin-bottom: -4rem;
   aspect-ratio: 1/1;
-  background-color: var(--c-neutral-850);
+  background-color: var(--c-neutral-890);
   border-radius: 0 100vh 0 0;
   width: 0px;
   padding: 0;
@@ -188,7 +194,6 @@ select {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-left: 0.5rem;
 }
 .carousel .carousel_item.active {
   transform: translate3d(0, 0, 100px);
@@ -288,6 +293,7 @@ header.header .container .header_content p > span {
 .main-container section.intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 10rem;
 }
 .main-container section.intro article {
   align-self: center;
@@ -370,12 +376,25 @@ header.header .container .header_content p > span {
 .main-container section.projects {
   padding: 10rem 0;
 }
-.main-container section.projects .section_title {
-  margin-bottom: 5rem;
+.main-container section.projects .section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.main-container section.projects .section-header .title {
   color: var(--c-neutral-800);
   font-family: var(--ff-primary);
   font-size: var(--fs-600);
-  text-align: center;
+  font-weight: 700;
+}
+.main-container section.projects .section-header p {
+  width: min(400px, 100%);
+  color: var(--c-neutral-400);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-200);
+  font-weight: 400;
 }
 
 footer.footer {

@@ -34,10 +34,10 @@ export default class Carousel {
                 <div>
                     <h3 class="title">${item.name}</h3>
                     <hr />
-                    <ul class="links">
-                        <li><a href="${item.git_url}" target="_blank"><img src="./assets/icons/icon-github.svg" alt="github link icon"></a></li>
-                        <li><a href="${item.live_url}" target="_blank"><img src="./assets/icons/icon-demo.svg" alt="demo link icon"></a></li>
-                    </ul>
+                    <div class="links">
+                        <a href="${item.git_url}" class="btn btn-primary btn-sm" target="_blank">Github repo</a>
+                        <a href="${item.live_url}" class="btn btn-primary btn-outline btn-sm" target="_blank">Live demo</a>
+                    </div>
                 </div>
             </div>
         `;
