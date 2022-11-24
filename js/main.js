@@ -23,6 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
         new Wavy(wavy, 5, 0.005, 0.01);
     });
 
+    // typewriter (on header only)
+    const like = document.querySelector('#like');
+    new Typewriter(like, like.dataset.text, like.dataset.duration);
+
 
     // carousel
     // let carouselIndex = 0;
