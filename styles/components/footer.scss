@@ -18,9 +18,12 @@ footer.footer {
         font-size: var(--fs-100);
         font-weight: 600;
     }
+    
+    > div {
+        width: min(350px, 100%);
+    }
 
     .more-info {
-        width: min(300px, 100%);
         color: var(--c-neutral-400);
         font-family: var(--ff-secondary);
         font-size: var(--fs-100);
@@ -48,13 +51,12 @@ footer.footer {
 
     .contact-me {
         justify-self: end;
-        width: min(350px, 100%);
 
         form {
             justify-self: end;
             font-family: var(--ff-secondary);
     
-            input, textarea {
+            input:not([type=submit]), textarea {
                 display: block;
                 width: 100%;
                 margin-bottom: 10px;
@@ -69,11 +71,11 @@ footer.footer {
                 &::placeholder {
                     color: var(--c-neutral-300);
                 }
-    
-                &[type=submit] {
-                    width: 50%;
-                    margin-left: auto;
-                }
+            }
+
+            input[type=submit] {
+                width: 50%;
+                margin-left: auto;
             }
     
             .form-group {
