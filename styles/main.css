@@ -246,18 +246,45 @@ main.root .logo.logo-dark {
 
 header.header {
   position: relative;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
 }
-header.header .container {
+header.header .header_nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  z-index: 99;
+}
+header.header .header_nav ul.links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+header.header .header_nav ul.links a {
+  color: var(--c-neutral-600);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-200);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  header.header .header_nav ul.links a:hover {
+    color: var(--c-yellow-400);
+  }
+}
+header.header .header_hero {
+  flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  translate: 0 -5rem;
 }
-header.header .container .header_content h1 {
+header.header .header_hero .header_content h1 {
   margin-bottom: 1.125rem;
   color: var(--c-neutral-800);
   font-family: var(--ff-primary);
@@ -265,17 +292,39 @@ header.header .container .header_content h1 {
   font-weight: 700;
   line-height: 1.25;
 }
-header.header .container .header_content h1 span:not([class]) {
+header.header .header_hero .header_content h1 span:not([class]) {
   display: block;
 }
-header.header .container .header_content p {
+header.header .header_hero .header_content p {
   margin-bottom: 0.75rem;
   color: var(--c-neutral-500);
   font-family: var(--ff-secondary);
   font-size: var(--fs-400);
   font-weight: 600;
 }
-header.header .container .header_content p > span {
+header.header .header_hero .header_content p > span {
+  font-family: var(--ff-primary);
+  font-weight: 700;
+}
+header.header .header_content h1 {
+  margin-bottom: 1.125rem;
+  color: var(--c-neutral-800);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-700);
+  font-weight: 700;
+  line-height: 1.25;
+}
+header.header .header_content h1 span:not([class]) {
+  display: block;
+}
+header.header .header_content p {
+  margin-bottom: 0.75rem;
+  color: var(--c-neutral-500);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-400);
+  font-weight: 600;
+}
+header.header .header_content p > span {
   font-family: var(--ff-primary);
   font-weight: 700;
 }
@@ -423,8 +472,10 @@ footer.footer p {
   font-size: var(--fs-100);
   font-weight: 600;
 }
+footer.footer > div {
+  width: min(350px, 100%);
+}
 footer.footer .more-info {
-  width: min(300px, 100%);
   color: var(--c-neutral-400);
   font-family: var(--ff-secondary);
   font-size: var(--fs-100);
@@ -446,29 +497,28 @@ footer.footer .more-info ul.socials {
 }
 footer.footer .contact-me {
   justify-self: end;
-  width: min(350px, 100%);
 }
 footer.footer .contact-me form {
   justify-self: end;
   font-family: var(--ff-secondary);
 }
-footer.footer .contact-me form input, footer.footer .contact-me form textarea {
+footer.footer .contact-me form input:not([type=submit]), footer.footer .contact-me form textarea {
   display: block;
   width: 100%;
   margin-bottom: 10px;
   padding: 0.375rem 0.75rem;
   border-radius: 5px;
 }
-footer.footer .contact-me form input:not([type=submit]), footer.footer .contact-me form textarea:not([type=submit]) {
+footer.footer .contact-me form input:not([type=submit]):not([type=submit]), footer.footer .contact-me form textarea:not([type=submit]) {
   border: 1px solid var(--c-neutral-400);
 }
-footer.footer .contact-me form input[name=message], footer.footer .contact-me form textarea[name=message] {
+footer.footer .contact-me form input:not([type=submit])[name=message], footer.footer .contact-me form textarea[name=message] {
   height: 200px;
 }
-footer.footer .contact-me form input::placeholder, footer.footer .contact-me form textarea::placeholder {
+footer.footer .contact-me form input:not([type=submit])::placeholder, footer.footer .contact-me form textarea::placeholder {
   color: var(--c-neutral-300);
 }
-footer.footer .contact-me form input[type=submit], footer.footer .contact-me form textarea[type=submit] {
+footer.footer .contact-me form input[type=submit] {
   width: 50%;
   margin-left: auto;
 }
