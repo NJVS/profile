@@ -33,6 +33,13 @@ header.header {
                     color: var(--c-yellow-400);
                 }
             }
+
+            button {
+
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
         }
     }
 

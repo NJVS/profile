@@ -12,7 +12,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
 
-	<!-- <link rel="stylesheet" href="./styles/main.css"> -->
+	<link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
@@ -26,7 +26,29 @@
 						<li><a href="">About</a></li>
 						<li><a href="">Projects</a></li>
 						<li><a href="">Contact</a></li>
-						<li><img src="./assets/icons/icon-lightmode.svg" alt=""></li>
+						<li class="dropdown">
+							<button class="dropdown_trigger"><img src="./assets/icons/icon-light.svg" alt="active theme"></button>
+							<ul class="dropdown_items">
+								<li>
+									<input type="radio" name="theme" id="themeDark" tabindex="-1">
+									<label for="themeDark" data-icon="dark">
+										<img src="./assets/icons/icon-dark.svg" alt="dark theme icon">
+										Dark</label>
+								</li>
+								<li>
+									<input type="radio" name="theme" id="themeLight" tabindex="-1" checked>
+									<label for="themeLight" data-icon="light">
+										<img src="./assets/icons/icon-light.svg" alt="light theme icon">
+										Light</label>
+								</li>
+								<li>
+									<input type="radio" name="theme" id="themeChuckie" tabindex="-1">
+									<label for="themeChuckie" data-icon="chuckie">
+										<img src="./assets/icons/icon-chuckie.svg" alt="chuckie theme icon">
+										Chuckie</label>
+								</li>
+							</ul>
+						</li>
 					</ul>
 				</nav>
 				<div class="header_hero container">
@@ -145,7 +167,7 @@
 
 	</main>
 
-	<!-- <script type="module" src="./js/main.js"></script> -->
+	<script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
