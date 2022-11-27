@@ -6,6 +6,11 @@ footer.footer {
     grid-template-columns: 1fr 1fr;
     padding: 7rem 0 2rem;
 
+    @include breakpoint(mobile, lg) {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
     h3 {
         color: var(--c-neutral-600);
         font-family: var(--ff-primary);
@@ -21,6 +26,7 @@ footer.footer {
     
     > div {
         width: min(350px, 100%);
+        // z-index: 9;
     }
 
     .more-info {
@@ -93,7 +99,14 @@ footer.footer {
         bottom: 0;
         left: 50%;
         translate: -50%;
-        width: 250px;
+        width: min(250px, 35%);
         aspect-ratio: 1/1;
+
+        @include breakpoint(mobile, lg) {
+            left: 25%;
+        }
+        @include breakpoint(mobile, sm) {
+            left: 75%;
+        }
     }
 }

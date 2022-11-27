@@ -40,18 +40,42 @@ header.header {
                 border: none;
                 cursor: pointer;
             }
+
+            @include breakpoint(mobile, sm) {
+                > li:not([class]) {
+                    display: none;;
+                }
+            }
         }
     }
 
     .header_hero {
         flex-grow: 1;
-        display: flex;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
-        justify-content: center;
         translate: 0 -5rem;
         // margin-top: -10rem;
+
+        @include breakpoint(mobile, md) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header_img {
+            justify-self: end;
+        }
+
         .header_content {
-            
+
+            @include breakpoint(mobile, md) {
+                text-align: center;
+            }
+
             h1 {
                 margin-bottom: 1.125rem;
                 color: var(--c-neutral-800);
