@@ -446,7 +446,7 @@ header.header .header_content p > span {
   .main-container section.intro {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 10rem;
+    margin-bottom: 3rem;
   }
 }
 .main-container section.intro article {

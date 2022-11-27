@@ -6,10 +6,13 @@
     padding: 5rem 0;
     background-color: var(--c-neutral-100);
 
+    @include breakpoint(mobile, md) {
+        // padding: 3rem 0;
+    }
+
     > svg {
         position: absolute;
         width: 100%;
-        // height: min(350px, 45vh);
         background-color: transparent;
         fill: var(--c-neutral-100);
 
@@ -29,7 +32,7 @@
         @include breakpoint(mobile, md) {
             display: flex;
             flex-direction: column-reverse;
-            margin-top: 10rem;
+            margin-bottom: 3rem;
         }
 
         article {
