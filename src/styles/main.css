@@ -224,7 +224,7 @@ select {
   aspect-ratio: 1/1;
   background-color: var(--c-neutral-890);
   border-radius: 0 100vh 0 0;
-  height: 0px;
+  width: 0px;
   padding: 0;
 }
 .carousel .carousel_item .item_details > div {
@@ -235,6 +235,12 @@ select {
   padding-left: 1.5rem;
   opacity: 0;
   visibility: hidden;
+}
+@media (max-width: 426px) {
+  .carousel .carousel_item .item_details > div {
+    bottom: 25%;
+    width: 85%;
+  }
 }
 .carousel .carousel_item .item_details > div h3.title {
   color: var(--c-neutral-100);
@@ -259,7 +265,7 @@ select {
   transform: translate3d(0, 0, 100px);
 }
 .carousel .carousel_item.active .item_details {
-  height: min(320px, 100%);
+  width: min(320px, 100%);
   transition: all 0.3s ease 0.3s;
 }
 .carousel .carousel_item.active .item_details > div {
