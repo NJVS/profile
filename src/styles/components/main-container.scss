@@ -3,7 +3,8 @@
 .main-container {
     position: relative;
     width: 100%;
-    padding: 5rem 0;
+    // padding: 5rem 0;
+    padding-top: 5rem;
     background-color: var(--c-neutral-100);
 
     @include breakpoint(mobile, md) {
@@ -55,7 +56,7 @@
                 width: 100%;
                 margin-bottom: 1.5rem;
 
-                nav.tab_nav {
+                .tab_nav {
                     display: flex;
                     align-items: center;
                     gap: 1.25rem;
@@ -65,38 +66,46 @@
                         justify-content: center;
                     }
 
-                    button {
-                        background-color: transparent;
-                        border: none;
+                    input[type=radio] {
+                        display: none;
+
+                        &:checked ~ label {
+                            color: var(--c-yellow-400);
+                        }
+                    }
+
+                    label {
                         color: var(--c-neutral-300);
                         font-family: var(--ff-secondary);
-                        font-size: var(--fs-200);
+                        font-size: var(--fs-100);
+                        font-weight: 700;
                         cursor: pointer;
-                        &:not(.active) {
-                            @include hover {
-                                color: var(--c-yellow-400);
-                            }
-                        }
-                        &.active {
+                        transition: all 0.3s ease;
+
+                        @include hover {
                             color: var(--c-yellow-400);
-                            font-weight: 700;
                         }
                     }
                 }
                 .tab_content {
                     p {
-                        color: var(--c-neutral-500);
+                        color: var(--c-neutral-400);
                         font-family: var(--ff-secondary);
                         font-size: var(--fs-200);
                         font-weight: 400;
-                        line-height: 1.5;
+                        // line-height: 1.25;
 
                         display: none;
                         opacity: 0;
                         visibility: hidden;
 
-                        &.show {
+                        transition: all 0.3s ease;
+
+                        &.active {
                             display: block;
+                        }
+
+                        &.show {
                             opacity: 1;
                             visibility: visible;
                         }

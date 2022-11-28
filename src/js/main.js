@@ -29,12 +29,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const like = document.querySelector('#like');
     new Typewriter(like, like.dataset.text, like.dataset.duration);
 
-    // dropdown
+    // dropdown (header nav)
     document.querySelectorAll('.dropdown > .dropdown_trigger').forEach(trigger => {
         trigger.addEventListener('click', event => {
             event.preventDefault();
             event.target.closest('.dropdown').classList.toggle('active');
         });
     });
+
+    // tabs (about)
+    document.querySelectorAll('#aboutTab input[type=radio]').forEach(tab => {
+        tab.addEventListener('change', event => {
+            const target = event.target;
+            const tabContainer = event.target.closest('.tab');
+            const targetContent = tabContainer.querySelector(`p[data-tab-content-for=${target.id}]`);
+
+            // remove all class on contents
+            tabContainer.querySelectorAll('.tab_item').forEach(item => {
+                item.classList.remove('show');
+                setTimeout(() => item.classList.remove('active'), 300);
+            });
+
+            // show select content
+            setTimeout(() => {
+                targetContent.classList.add('active');
+                setTimeout(() => targetContent.classList.add('show'), 300);
+            }, 300);
+
+        });
+    });
+    
 });
 
