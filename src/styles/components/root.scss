@@ -1,7 +1,7 @@
 main.root {
     width: 100%;
     height: auto;
-    background-color: var(--c-neutral-200);
+    background-color: var(--background-primary);
 
     .container {
         width: min(1000px, 90%);
@@ -9,17 +9,15 @@ main.root {
     }
 
     .c-primary {
-        color: var(--c-yellow-400);
+        color: var(--text-primary);
     }
     .c-secondary {
-        color: var(--c-purple-400);
+        color: var(--text-secondary);
     }
 
     .logo {
         font-family: var(--ff-logo);
         font-size: var(--fs-800);
-        &.logo-dark {
-            color: var(--c-neutral-600);
-        }
+        color: var(--text-heading);
     }
 }

@@ -5,25 +5,25 @@
     width: 100%;
     // padding: 5rem 0;
     padding-top: 5rem;
-    background-color: var(--c-neutral-100);
+    background-color: var(--background-secondary);
 
     @include breakpoint(mobile, md) {
         // padding: 3rem 0;
     }
 
-    > svg {
-        position: absolute;
-        width: 100%;
-        background-color: transparent;
-        fill: var(--c-neutral-100);
+    // > svg {
+    //     position: absolute;
+    //     width: 100%;
+    //     background-color: transparent;
+    //     fill: var(--c-neutral-100);
 
-        &.top-wavy {
-            bottom: 100%;
-        }
-        &.bottom-wavy {
-            top: 100%;
-        }
-    }
+    //     &.top-wavy {
+    //         bottom: 100%;
+    //     }
+    //     &.bottom-wavy {
+    //         top: 100%;
+    //     }
+    // }
 
     section.intro {
         display: grid;
@@ -46,7 +46,7 @@
             
             > h2 {
                 // margin-bottom: 0.5rem;
-                color: var(--c-neutral-800);
+                color: var(--text-heading);
                 font-family: var(--ff-primary);
                 font-size: var(--fs-600);
                 font-weight: 700;
@@ -75,7 +75,7 @@
                     }
 
                     label {
-                        color: var(--c-neutral-300);
+                        color: var(--text-muted);
                         font-family: var(--ff-secondary);
                         font-size: var(--fs-100);
                         font-weight: 700;
@@ -89,7 +89,7 @@
                 }
                 .tab_content {
                     p {
-                        color: var(--c-neutral-400);
+                        color: var(--text-muted);
                         font-family: var(--ff-secondary);
                         font-size: var(--fs-200);
                         font-weight: 400;
@@ -142,9 +142,9 @@
                 text-align: center;
                 span {
                     padding: 0 8px;
-                    border: 1px solid var(--c-neutral-400);
+                    border: 1px solid var(--text-muted);
                     border-radius: 5px;
-                    color: var(--c-neutral-400);
+                    color: var(--text-muted);
                     font-family: var(--ff-triary);
                     font-size: var(--fs-100);
                 }
@@ -164,7 +164,7 @@
             text-align: center;
 
             .title {
-                color: var(--c-neutral-800);
+                color: var(--text-heading);
                 font-family: var(--ff-primary);
                 font-size: var(--fs-600);
                 font-weight: 700;
@@ -172,7 +172,7 @@
 
             p {
                 width: min(400px, 100%);
-                color: var(--c-neutral-400);
+                color: var(--text-muted);
                 font-family: var(--ff-secondary);
                 font-size: var(--fs-200);
                 font-weight: 400;

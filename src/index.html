@@ -10,7 +10,9 @@
 	<!-- google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Source+Code+Pro:wght@300;400&display=swap"
+		rel="stylesheet">
 
 	<link rel="stylesheet" href="./styles/main.css">
 </head>
@@ -19,47 +21,58 @@
 	<main class="root">
 
 		<header class="header">
-			
-				<nav class="header_nav container">
-					<h3 class="logo logo-dark">Lien</h3>
-					<ul class="links">
-						<li><a href="">About</a></li>
-						<li><a href="">Projects</a></li>
-						<li><a href="">Contact</a></li>
-						<li class="dropdown">
-							<button class="dropdown_trigger"><img src="./assets/icons/icon-light.svg" alt="active theme"></button>
-							<ul class="dropdown_items">
-								<li>
-									<input type="radio" name="theme" id="themeDark" tabindex="-1">
-									<label for="themeDark" data-icon="dark">
-										<img src="./assets/icons/icon-dark.svg" alt="dark theme icon">
-										Dark</label>
-								</li>
-								<li>
-									<input type="radio" name="theme" id="themeLight" tabindex="-1" checked>
-									<label for="themeLight" data-icon="light">
-										<img src="./assets/icons/icon-light.svg" alt="light theme icon">
-										Light</label>
-								</li>
-								<li>
-									<input type="radio" name="theme" id="themeChuckie" tabindex="-1">
-									<label for="themeChuckie" data-icon="chuckie">
-										<img src="./assets/icons/icon-chuckie.svg" alt="chuckie theme icon">
-										Chuckie</label>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-				<div class="header_hero container">
-					<img src="./assets/image/hero-img.png" class="header_img" alt="welcome illustration">
-					<div class="header_content">
-						<h1><span>Hi there,</span> I'm <span class="c-primary">Neil</span> Jonathan</h1>
-						<p>I'm into <span id="like" class="c-secondary" data-text='["Frontend Development", "UI/UX Design", "Backend Development", "Fullstack Development"]' data-duration="1000"></span></p>
-						<a href="#main" class="btn btn-secondary">More about me</a>
-					</div>
+
+			<nav class="header_nav container">
+				<h3 class="logo logo-dark">Lien</h3>
+				<ul class="links">
+					<li><a href="">About</a></li>
+					<li><a href="">Projects</a></li>
+					<li><a href="">Contact</a></li>
+					<li>
+						<label for="themeSwitcher" class="switch">
+							<input type="checkbox" name="themes" id="themeSwitcher">
+							<div class="planet"></div>
+							<div class="rays">
+								<svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="250" cy="250" r="200" />
+								</svg>
+								<svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="250" cy="250" r="200" />
+								</svg>
+								<svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="250" cy="250" r="200" />
+								</svg>
+								<svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="250" cy="250" r="200" />
+								</svg>
+								<svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="250" cy="250" r="200" />
+								</svg>
+								<svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="250" cy="250" r="200" />
+								</svg>
+								<svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="250" cy="250" r="200" />
+								</svg>
+								<svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="250" cy="250" r="200" />
+								</svg>
+							</div>
+						</label>
+					</li>
+				</ul>
+			</nav>
+			<div class="header_hero container">
+				<img src="./assets/image/hero-img.png" class="header_img" alt="welcome illustration">
+				<div class="header_content">
+					<h1><span>Hi there,</span> I'm <span class="c-primary">Neil</span> Jonathan</h1>
+					<p>I'm into <span id="like" class="c-secondary"
+							data-text='["Frontend Development", "UI/UX Design", "Backend Development", "Fullstack Development"]'
+							data-duration="1000"></span></p>
+					<a href="#main" class="btn btn-secondary">More about me</a>
 				</div>
-			
+			</div>
+
 
 		</header>
 
@@ -83,9 +96,23 @@
 							</li>
 						</ul>
 						<div class="tab_content">
-							<p data-tab-content-for="tabLife" class="tab_item active show">I've always wanted to work in the web development industry since I find its technology fascinating, and becoming a Full-Stack Developer is my ultimate objective. Tho I'm proud of my front-end skills,	I'm well aware that I still have a lot to learn.</p>
-							<p data-tab-content-for="tabEduc" class="tab_item">I earned my bachelor's degree in computer science from Lyceum of the Philippines University. I chose this major because programming is, for me, the perfect balance of logic and creativity. Starting from a blank canvas, I can give life to my ideas. I've always been interested in web development, but during my undergrad studies, I mostly handled the data structure and back-end on almost all the projects I worked on and rarely worked on web development.</p>
-							<p data-tab-content-for="tabExpi" class="tab_item">Although I have no professional experience in web development, I have worked on projects with other developers in the past. I also wrote some apps to help analyze streamflow for a friend's project. I wasn't paid for it (probono) and was done in my spare time. I love the fact that I can get paid to do something that I would do for free. I love solving puzzles, and that is what programming really is.</p>
+							<p data-tab-content-for="tabLife" class="tab_item active show">I've always wanted to work in
+								the web development industry since I find its technology fascinating, and becoming a
+								Full-Stack Developer is my ultimate objective. Tho I'm proud of my front-end skills, I'm
+								well aware that I still have a lot to learn.</p>
+							<p data-tab-content-for="tabEduc" class="tab_item">I earned my bachelor's degree in computer
+								science from Lyceum of the Philippines University. I chose this major because
+								programming is, for me, the perfect balance of logic and creativity. Starting from a
+								blank canvas, I can give life to my ideas. I've always been interested in web
+								development, but during my undergrad studies, I mostly handled the data structure and
+								back-end on almost all the projects I worked on and rarely worked on web development.
+							</p>
+							<p data-tab-content-for="tabExpi" class="tab_item">Although I have no professional
+								experience in web development, I have worked on projects with other developers in the
+								past. I also wrote some apps to help analyze streamflow for a friend's project. I wasn't
+								paid for it (probono) and was done in my spare time. I love the fact that I can get paid
+								to do something that I would do for free. I love solving puzzles, and that is what
+								programming really is.</p>
 						</div>
 					</div>
 					<div class="links">
@@ -132,7 +159,8 @@
 		<footer class="footer container">
 			<div class="more-info">
 				<h3 class="logo logo-dark">Lien</h3>
-				<p>Thanks for visiting my profile and hope you enjoy. I've build this project from scratch and didn't use any libraries/frameworks. You can also find me here:</p>
+				<p>Thanks for visiting my profile and hope you enjoy. I've build this project from scratch and didn't
+					use any libraries/frameworks. You can also find me here:</p>
 				<ul class="details">
 					<li>
 						<img src="./assets/icons/icon-location-dot-solid.svg" alt="location">
@@ -165,7 +193,7 @@
 					<input type="submit" class="btn btn-primary" value="Submit">
 				</form>
 			</div>
-			
+
 			<img src="./assets/image/footer-img.png" alt="hit me up illustration">
 		</footer>
 

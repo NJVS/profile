@@ -4,7 +4,7 @@ footer.footer {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 7rem 0 2rem;
+    padding: 12.5rem 0 2rem;
 
     @include breakpoint(mobile, lg) {
         grid-template-columns: 1fr;
@@ -12,13 +12,13 @@ footer.footer {
     }
 
     h3 {
-        color: var(--c-neutral-600);
+        color: var(--text-heading);
         font-family: var(--ff-primary);
         font-size: var(--fs-500);
     }
     p {
         margin-bottom: 1rem;
-        color: var(--c-neutral-400);
+        color: var(--text-muted);
         font-family: var(--ff-secondary);
         font-size: var(--fs-100);
         font-weight: 600;
@@ -30,7 +30,7 @@ footer.footer {
     }
 
     .more-info {
-        color: var(--c-neutral-400);
+        color: var(--text-muted);
         font-family: var(--ff-secondary);
         font-size: var(--fs-100);
         font-weight: 400;

@@ -18,8 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 : 'top: 99%; rotate: 180deg;'
             }
             width: 100%;
+            max-height: ${wavy.getAttribute('viewBox').split(' ')[3]}px;
             background-color: transparent;
-            fill: var(--c-neutral-100);
+            fill: var(--background-secondary);
         `;
 
         new Wavy(wavy, 5, 0.005, 0.01);
@@ -28,14 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // typewriter (on header only)
     const like = document.querySelector('#like');
     new Typewriter(like, like.dataset.text, like.dataset.duration);
-
-    // dropdown (header nav)
-    document.querySelectorAll('.dropdown > .dropdown_trigger').forEach(trigger => {
-        trigger.addEventListener('click', event => {
-            event.preventDefault();
-            event.target.closest('.dropdown').classList.toggle('active');
-        });
-    });
 
     // tabs (about)
     document.querySelectorAll('#aboutTab input[type=radio]').forEach(tab => {
@@ -57,6 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 300);
 
         });
+    });
+
+
+    // themes
+    document.querySelector('#themeSwitcher').addEventListener('change', event => {
+        const theme = event.currentTarget.checked ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', theme);
     });
     
 });

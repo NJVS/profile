@@ -23,7 +23,7 @@ header.header {
             gap: 1.5rem;
 
             a {
-                color: var(--c-neutral-600);
+                color: var(--text-muted);
                 font-family: var(--ff-secondary);
                 font-size: var(--fs-200);
                 font-weight: 600;
@@ -31,15 +31,8 @@ header.header {
                 transition: all 0.3s ease;
 
                 @include hover {
-                    color: var(--c-yellow-400);
+                    color: var(--text-primary);
                 }
-            }
-
-            button {
-
-                background-color: transparent;
-                border: none;
-                cursor: pointer;
             }
 
             @include breakpoint(mobile, sm) {
@@ -52,14 +45,10 @@ header.header {
 
     .header_hero {
         flex-grow: 1;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         translate: 0 -5rem;
-        // margin-top: -10rem;
 
         @include breakpoint(mobile, md) {
             display: flex;
@@ -79,7 +68,7 @@ header.header {
 
             h1 {
                 margin-bottom: 1.125rem;
-                color: var(--c-neutral-800);
+                color: var(--text-heading);
                 font-family: var(--ff-primary);
                 font-size: var(--fs-700);
                 font-weight: 700;
@@ -91,7 +80,7 @@ header.header {
             }
             p {
                 margin-bottom: 0.75rem;
-                color: var(--c-neutral-500);
+                color: var(--text-muted);
                 font-family: var(--ff-secondary);
                 font-size: var(--fs-400);
                 font-weight: 600;
@@ -103,40 +92,4 @@ header.header {
             }
         }
     }
-
-    // .container {
-    //     // display: flex;
-    //     // align-items: center;
-    //     // justify-content: center;
-    //     z-index: 10;
-
-        .header_content {
-            h1 {
-                margin-bottom: 1.125rem;
-                color: var(--c-neutral-800);
-                font-family: var(--ff-primary);
-                font-size: var(--fs-700);
-                font-weight: 700;
-                line-height: 1.25;
-                
-                span:not([class]) {
-                    display: block;
-                }
-            }
-            p {
-                margin-bottom: 0.75rem;
-                color: var(--c-neutral-500);
-                font-family: var(--ff-secondary);
-                font-size: var(--fs-400);
-                font-weight: 600;
-
-                > span {
-                    font-family: var(--ff-primary);
-                    font-weight: 700;
-                }
-            }
-        }
-    // }
-
-    
 }

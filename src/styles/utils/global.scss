@@ -17,16 +17,39 @@
 
 	// Primary
 	--c-yellow-400: #ecab3c;
+	--c-purple-200: hsl(282, 89%, 72%);
+	--c-purple-300: hsl(282, 63%, 54%);
 	--c-purple-400: hsl(282, 77%, 42%);
 
 	// Neutral
 	--c-neutral-100: hsl(0, 0%, 100%);
 	--c-neutral-200: hsl(0, 0%, 97%);
 	--c-neutral-300: hsl(0, 0%, 70%);
-	// --c-neutral-150: hsl(0, 0%, 95%);
 	--c-neutral-400: hsl(0, 0%, 50%);
-	--c-neutral-600: hsl(0, 0%, 28%);
+	--c-neutral-500: hsl(0, 0%, 28%);
+	--c-neutral-600: hsl(0, 0%, 18%);
 	--c-neutral-700: hsl(0, 0%, 14%);
 	--c-neutral-800: hsl(0, 0%, 12%);
 	--c-neutral-890: hsla(0, 0%, 12%, 0.9);
+
+
+	--text-primary: var(--c-yellow-400);
+	--text-secondary: var(--c-purple-400);
+	--text-heading: var(--c-neutral-500);
+	--text-muted: var(--c-neutral-400);
+	--background-primary: var(--c-neutral-200);
+	--background-secondary: var(--c-neutral-100);
+	--button-primary: var(--c-yellow-400);
+	--button-secondary: var(--c-purple-400);
+	--carousel-shadow: hsla(0, 0%, 12%, 0.9);
+}
+
+[data-theme=dark] {
+	--text-secondary: var(--c-purple-200);
+	--text-heading: var(--c-neutral-200);
+	--text-muted: var(--c-neutral-300);
+	--background-primary: var(--c-neutral-600);
+	--background-secondary: var(--c-neutral-700);
+	--button-secondary: var(--c-purple-300);
+	--carousel-shadow: rgb(0, 0, 0);
 }
