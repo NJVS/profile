@@ -1,4 +1,4 @@
-// import "../styles/main.css";
+import "../styles/main.css";
 
 import Wavy from './_wavy.js';
 import Carousel from './_carousel.js';
