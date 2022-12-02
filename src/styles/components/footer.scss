@@ -41,8 +41,12 @@ footer.footer {
                 align-items: center;
                 gap: 1rem;
 
-                &:first-child > img {
-                    margin: 0 1px;
+                &:first-child > svg {
+                    margin: 0 1.5px;
+                }
+
+                svg path {
+                    fill: var(--text-heading);
                 }
             }
         }
@@ -52,6 +56,15 @@ footer.footer {
             display: flex;
             align-items: center;
             gap: 1.5rem;
+
+            svg path {
+                fill: var(--text-heading);
+                transition: fill 0.3s ease;
+            }
+
+            a:hover svg path {
+                fill: var(--text-primary);
+            }
         }
     }
 
